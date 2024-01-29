@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 class a {
@@ -404,101 +405,106 @@ class a {
         int n = 5;
         a a1 = new a();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter name");
+        System.out.println("Enter name in capital");
         String name = sc.nextLine();
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < name.length(); j++) {
-
-                alpha = name.substring(j, j + 1);
-                if (alpha != " ") {
-                    switch (alpha) {
-                        case "A":
-                            a1.A(i);
-                            break;
-                        case "B":
-                            a1.B(i);
-                            break;
-                        case "C":
-                            a1.C(i);
-                            break;
-                        case "D":
-                            a1.D(i);
-                            break;
-                        case "E":
-                            a1.E(i);
-                            break;
-                        case "F":
-                            a1.F(i);
-                            break;
-                        case "G":
-                            a1.G(i);
-                            break;
-                        case "H":
-                            a1.H(i);
-                            break;
-                        case "I":
-                            a1.I(i);
-                            break;
-                        case "J":
-                            a1.J(i);
-                            break;
-                        case "K":
-                            a1.K(i);
-                            break;
-                        case "L":
-                            a1.L(i);
-                            break;
-                        case "M":
-                            a1.M(i);
-                            break;
-                        case "N":
-                            a1.N(i);
-                            break;
-                        case "O":
-                            a1.O(i);
-                            break;
-                        case "P":
-                            a1.P(i);
-                            break;
-                        case "Q":
-                            a1.Q(i);
-                            break;
-                        case "R":
-                            a1.R(i);
-                            break;
-                        case "S":
-                            a1.S(i);
-                            break;
-                        case "T":
-                            a1.T(i);
-                            break;
-                        case "U":
-                            a1.U(i);
-                            break;
-                        case "V":
-                            a1.V(i);
-                            break;
-                        case "W":
-                            a1.W(i);
-                            break;
-                        case "X":
-                            a1.X(i);
-                            break;
-                        case "Y":
-                            a1.Y(i);
-                            break;
-                        case "Z":
-                            a1.Z(i);
-                            break;
-                        default:
-                            break;
+        System.out.println();
+        // ArrayList<String> ar1 = new ArrayList<String>();
+        String[] ar1 = name.split(" ");
+        for (int a = 0; a < ar1.length; a++) {
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < ar1[a].length(); j++) {
+                    alpha = ar1[a].substring(j, j + 1);
+                    if (alpha != " ") {
+                        switch (alpha) {    
+                            case "A":
+                                a1.A(i);
+                                break;
+                            case "B":
+                                a1.B(i);
+                                break;
+                            case "C":
+                                a1.C(i);
+                                break;
+                            case "D":
+                                a1.D(i);
+                                break;
+                            case "E":
+                                a1.E(i);
+                                break;
+                            case "F":
+                                a1.F(i);
+                                break;
+                            case "G":
+                                a1.G(i);
+                                break;
+                            case "H":
+                                a1.H(i);
+                                break;
+                            case "I":
+                                a1.I(i);
+                                break;
+                            case "J":
+                                a1.J(i);
+                                break;
+                            case "K":
+                                a1.K(i);
+                                break;
+                            case "L":
+                                a1.L(i);
+                                break;
+                            case "M":
+                                a1.M(i);
+                                break;
+                            case "N":
+                                a1.N(i);
+                                break;
+                            case "O":
+                                a1.O(i);
+                                break;
+                            case "P":
+                                a1.P(i);
+                                break;
+                            case "Q":
+                                a1.Q(i);
+                                break;
+                            case "R":
+                                a1.R(i);
+                                break;
+                            case "S":
+                                a1.S(i);
+                                break;
+                            case "T":
+                                a1.T(i);
+                                break;
+                            case "U":
+                                a1.U(i);
+                                break;
+                            case "V":
+                                a1.V(i);
+                                break;
+                            case "W":
+                                a1.W(i);
+                                break;
+                            case "X":
+                                a1.X(i);
+                                break;
+                            case "Y":
+                                a1.Y(i);
+                                break;
+                            case "Z":
+                                a1.Z(i);
+                                break;
+                            default:
+                                break;
+                        }
+                    } else {
+                        System.out.println();
                     }
-                } else {
-                    System.out.println();
+                    System.out.print(" ");
                 }
-                System.out.print(" ");
+                System.out.println();
             }
-            System.out.println();
+            System.out.println("\n");
         }
     }
 }
